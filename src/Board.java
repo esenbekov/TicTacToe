@@ -43,11 +43,6 @@ public class Board {
 
     }
 
-    public char[] getBoard() {
-        return this.slots;
-
-    }
-
     public void displayBoard() {
         System.out.println(" " + slots[0] + " | " + slots[1] + " | " + slots[2]);
         System.out.println("-----------");
@@ -163,7 +158,7 @@ public class Board {
             end = 8;
 
         } else {
-            target = slots[0]; // assume column zero
+            target = slots[0];
             start = 3;
             end = 6;
         }
@@ -191,7 +186,7 @@ public class Board {
             increament = 4;
 
         } else {
-            target = slots[2]; // assume column zero
+            target = slots[2];
             start = 4;
             end = 6;
             increament = 2;
